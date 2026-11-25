@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use or reference ExergyNet research, please cite using the metadata below."
+title: "ExergyNet Research"
+type: software
+date-released: "2026-11-25"
+url: "https://exergynet.org/research.html"
+repository-code: "https://github.com/ezumba/exergynet-research"
+abstract: >-
+  Official ExergyNet research publications and validated benchmark results.
+  Includes EDT-BENCH-001: a LongMemEval-S evaluation of ExergyNet's xLMP
+  Semantic Router demonstrating 76.2% accuracy with 91.6% lower context
+  consumption versus session-level BM25.
+authors:
+  - name: "EDT INC"
+    website: "https://exergynet.org"
+    email: "ai@exergynet.org"
+keywords:
+  - persistent memory
+  - conversational AI
+  - context efficiency
+  - LongMemEval
+  - benchmark
+doi: 10.5281/zenodo.24544305
+license-url: "https://github.com/ezumba/exergynet-research/blob/main/LICENSE-STATUS.md"

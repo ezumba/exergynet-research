@@ -1,0 +1,48 @@
+{
+  "index_version": "1.0",
+  "organization": "EDT INC",
+  "repository": "exergynet-research",
+  "url": "https://github.com/ezumba/exergynet-research",
+  "last_updated": "2026-11-25",
+  "publications": [
+    {
+      "id": "EDT-BENCH-001",
+      "type": "benchmark_report",
+      "title": "ExergyNet Achieves 76.2% Accuracy on LongMemEval-S with 91.6% Lower Context Consumption",
+      "date": "2026-11-25",
+      "status": "PENDING_PUBLICATION_AUTHORIZATION",
+      "doi": "10.5281/zenodo.24544305",
+      "doi_pending": false,
+      "doi_registrar": "Zenodo",
+      "zenodo_url": "https://zenodo.org/records/24544305",
+      "path": "benchmarks/EDT-BENCH-001/",
+      "report_file": "benchmarks/EDT-BENCH-001/EDT_BENCH_001_FINAL_REPORT.md",
+      "report_sha256": "d6f1c18f4e3c7d604af1a0636794e853f976d506d49139bcb86ff9c7b62d6477",
+      "validator_checks": "54/54 PASS",
+      "website_url": "https://exergynet.org/research-edt-bench-001.html",
+      "key_results": {
+        "accuracy": "76.2%",
+        "token_reduction": "91.6%",
+        "accuracy_vs_bm25": "+19.8pp",
+        "mean_tokens_per_query": 2456,
+        "n_questions": 500,
+        "benchmark": "LongMemEval-S"
+      },
+      "citation": {
+        "authors": ["EDT INC"],
+        "year": 2026,
+        "venue": "ExergyNet Research",
+        "arxiv": null,
+        "bibtex_key": "EDT-BENCH-001"
+      }
+    }
+  ],
+  "pending": [
+    {
+      "id": "ExergyNet-V5",
+      "type": "research_paper",
+      "title": "Memory Grows. Context Does Not Have To.",
+      "note": "Published separately at https://github.com/ezumba/exergynet-whitepaper; will be cross-referenced here when exergynet-research is live."
+    }
+  ]
+}

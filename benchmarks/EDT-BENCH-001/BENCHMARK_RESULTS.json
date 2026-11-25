@@ -1,0 +1,126 @@
+{
+  "benchmark_id": "EDT-BENCH-001",
+  "title": "ExergyNet Achieves 76.2% Accuracy on LongMemEval-S with 91.6% Lower Context Consumption",
+  "published_by": "EDT INC",
+  "date": "2026-11-25",
+  "directive": "EDT-BENCH-001-C3-VERIFY-006",
+  "dataset": {
+    "name": "LongMemEval-S",
+    "questions": 500,
+    "question_types": ["single-session-user", "single-session-assistant", "knowledge-update", "multi-session", "temporal-reasoning", "single-session-preference"],
+    "reference": "Wu et al. (2024), arXiv:2410.10813"
+  },
+  "systems": {
+    "b3_bm25": {
+      "name": "Session-level BM25 (B3)",
+      "description": "rank_bm25, session-level retrieval, top-10 sessions per question",
+      "accuracy": 0.564,
+      "correct_answers": 282,
+      "mean_prompt_tokens": 29382,
+      "total_prompt_tokens": 14690941,
+      "token_source": "provider-reported (Gemini API)"
+    },
+    "b1_oracle": {
+      "name": "Evidence-only Oracle (B1)",
+      "description": "longmemeval_oracle.json split — evidence-bearing sessions only",
+      "accuracy": 0.744,
+      "correct_answers": 372,
+      "mean_prompt_tokens_estimate": 5600,
+      "token_source": "local-tokenizer estimate (not provider-reported)"
+    },
+    "xlmp_verify006": {
+      "name": "ExergyNet xLMP (VERIFY-006)",
+      "description": "VMN turn-level BM25, top-10 turns per question, bounded context window",
+      "accuracy": 0.762,
+      "correct_answers": 381,
+      "mean_prompt_tokens": 2456,
+      "total_prompt_tokens": 1227949,
+      "token_source": "provider-reported (Gemini API)",
+      "generation_model": "gemini-3.8-flash",
+      "evaluation_model": "gemini-3.8-flash",
+      "evaluation_note": "Same model for generation and evaluation — not independent third-party evaluation",
+      "run_type": "single-run"
+    }
+  },
+  "category_results": {
+    "single-session-user": {
+      "n": 70,
+      "xlmp_accuracy": 0.943,
+      "oracle_accuracy": 0.943,
+      "b3_accuracy": 0.843,
+      "xlmp_vs_b3_delta_pp": 10.0
+    },
+    "single-session-assistant": {
+      "n": 56,
+      "xlmp_accuracy": 0.804,
+      "oracle_accuracy": 1.000,
+      "b3_accuracy": 0.839,
+      "xlmp_vs_b3_delta_pp": -3.5,
+      "forensic_note": "Internal analysis: 2 retrieval misses, 9 long-response truncation cases out of 11 incorrect responses. Evaluated configuration indexed both user and assistant content."
+    },
+    "knowledge-update": {
+      "n": 78,
+      "xlmp_accuracy": 0.910,
+      "oracle_accuracy": 0.859,
+      "b3_accuracy": 0.680,
+      "xlmp_vs_b3_delta_pp": 23.0
+    },
+    "multi-session": {
+      "n": 133,
+      "xlmp_accuracy": 0.564,
+      "oracle_accuracy": 0.609,
+      "b3_accuracy": 0.361,
+      "xlmp_vs_b3_delta_pp": 20.3
+    },
+    "temporal-reasoning": {
+      "n": 133,
+      "xlmp_accuracy": 0.782,
+      "oracle_accuracy": 0.662,
+      "b3_accuracy": 0.534,
+      "xlmp_vs_b3_delta_pp": 24.8
+    },
+    "single-session-preference": {
+      "n": 30,
+      "xlmp_accuracy": 0.667,
+      "oracle_accuracy": 0.467,
+      "b3_accuracy": 0.133,
+      "xlmp_vs_b3_delta_pp": 53.3
+    }
+  },
+  "statistical_analysis": {
+    "test": "McNemar (exact two-tailed binomial)",
+    "n_paired": 500,
+    "contingency": {
+      "both_correct": 314,
+      "xlmp_correct_oracle_wrong": 67,
+      "xlmp_wrong_oracle_correct": 58,
+      "both_wrong": 61
+    },
+    "p_value": 0.474422,
+    "significance": "not statistically significant",
+    "ci_95_low_pp": -2.6,
+    "ci_95_high_pp": 6.2,
+    "ci_method": "normal approximation",
+    "interpretation": "Does not establish statistical superiority, non-inferiority, or equivalence"
+  },
+  "context_efficiency": {
+    "xlmp_vs_b3_token_reduction_pct": 91.6,
+    "xlmp_vs_b3_correct_answer_increase_pct": 35.1,
+    "xlmp_vs_b3_additional_correct_answers": 99
+  },
+  "limitations": [
+    "Granularity attribution: turn-level BM25 control (B4) not conducted",
+    "Single-run evaluation",
+    "Same-model evaluation (generation and evaluation both gemini-3.8-flash)",
+    "Oracle token count is a local-tokenizer estimate, not provider-reported"
+  ],
+  "sealed_artifact_hashes": {
+    "generation_log_sha256": "cb154d2949b6c6bf94406c11a8f80ec373e3bececa2e066e61fb074b9d0bfa1e",
+    "evaluation_log_sha256": "4ddaf962cdb5b6152bed91da4b4b14f0cb2cea000055b93e57f103a75b3d3719",
+    "retrieval_corpus_sha256": "7cdcf2860d4fa58d3b35aae602598f1a397702cd3aeaf0d30957b10566ebc532",
+    "reference_dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+    "final_report_r5_sha256": "d6f1c18f4e3c7d604af1a0636794e853f976d506d49139bcb86ff9c7b62d6477"
+  },
+  "contact": "ai@exergynet.org",
+  "website": "https://exergynet.org/research-edt-bench-001.html"
+}

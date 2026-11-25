@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: "If you use or reference this benchmark result, please cite it using the metadata below."
+title: "ExergyNet Achieves 76.2% Accuracy on LongMemEval-S with 91.6% Lower Context Consumption"
+type: report
+version: "1.0.0"
+date-released: "2026-11-25"
+url: "https://exergynet.org/research-edt-bench-001.html"
+repository-code: "https://github.com/ezumba/exergynet-research"
+abstract: >-
+  EDT-BENCH-001 evaluates ExergyNet's xLMP Semantic Router against the LongMemEval-S
+  benchmark (500 questions, 6 question types) using session-level BM25 and an
+  evidence-only Oracle as comparators. xLMP achieved 76.2% accuracy (381/500 correct)
+  with a mean of 2,456 provider-reported prompt tokens per query — a 91.6% reduction
+  versus session-level BM25 (29,382 tokens/query, 56.4% accuracy). The 1.8
+  percentage-point difference between xLMP and the Oracle (74.4%) was not
+  statistically significant (McNemar exact two-tailed p = 0.474, n = 500).
+  Evaluation used gemini-3.8-flash for both generation and evaluation.
+  This is a single-run evaluation; a turn-level BM25 granularity control (B4)
+  has not been conducted.
+authors:
+  - name: "EDT INC"
+    website: "https://exergynet.org"
+    email: "ai@exergynet.org"
+keywords:
+  - persistent memory
+  - conversational memory
+  - retrieval-augmented generation
+  - LongMemEval
+  - context efficiency
+  - benchmark
+  - xLMP
+  - semantic routing
+  - turn-level retrieval
+references:
+  - type: article
+    title: "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory"
+    authors:
+      - family-names: "Wu"
+        given-names: "Di"
+      - family-names: "Wang"
+        given-names: "Hongwei"
+      - family-names: "Yu"
+        given-names: "Wenhao"
+      - family-names: "Zhang"
+        given-names: "Yuwei"
+      - family-names: "Chang"
+        given-names: "Kai-Wei"
+      - family-names: "Yu"
+        given-names: "Dong"
+    year: 2024
+    url: "https://arxiv.org/abs/2410.10813"
+    identifiers:
+      - type: other
+        value: "arXiv:2410.10813"
+doi: 10.5281/zenodo.24544305
+license-url: "https://github.com/ezumba/exergynet-research/blob/main/LICENSE-STATUS.md"

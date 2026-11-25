@@ -1,0 +1,56 @@
+{
+  "manifest_version": "1.0",
+  "benchmark_id": "EDT-BENCH-001",
+  "date": "2026-11-25",
+  "public_artifacts": {
+    "final_report": {
+      "file": "EDT_BENCH_001_FINAL_REPORT.md",
+      "sha256": "d6f1c18f4e3c7d604af1a0636794e853f976d506d49139bcb86ff9c7b62d6477",
+      "status": "PUBLIC",
+      "description": "Complete technical report (R5) with all results, methodology, and statistical analysis"
+    },
+    "benchmark_results_csv": {
+      "file": "BENCHMARK_RESULTS.csv",
+      "status": "PUBLIC",
+      "description": "Machine-readable aggregate accuracy and token counts by system and question type"
+    },
+    "benchmark_results_json": {
+      "file": "BENCHMARK_RESULTS.json",
+      "status": "PUBLIC",
+      "description": "Structured benchmark results with full metadata"
+    },
+    "figures": {
+      "status": "PUBLIC",
+      "files": ["figures/overall_accuracy.svg", "figures/context_consumption.svg", "figures/accuracy_by_category.svg", "figures/accuracy_context_comparison.svg"]
+    }
+  },
+  "restricted_artifacts": {
+    "generation_log": {
+      "identifier": "c3_meta_verify006_gen.jsonl",
+      "sha256": "cb154d2949b6c6bf94406c11a8f80ec373e3bececa2e066e61fb074b9d0bfa1e",
+      "status": "RESTRICTED",
+      "description": "Per-question generation results (500 records). Contains provider API outputs. Available for controlled evaluation on request."
+    },
+    "evaluation_log": {
+      "identifier": "c3_meta_verify006_eval.jsonl",
+      "sha256": "4ddaf962cdb5b6152bed91da4b4b14f0cb2cea000055b93e57f103a75b3d3719",
+      "status": "RESTRICTED",
+      "description": "Per-question evaluation labels (500 records). Available for controlled evaluation on request."
+    },
+    "retrieval_corpus": {
+      "identifier": "c3_meta_v3_vmn_top10_full.jsonl",
+      "sha256": "7cdcf2860d4fa58d3b35aae602598f1a397702cd3aeaf0d30957b10566ebc532",
+      "status": "RESTRICTED",
+      "description": "VMN retrieval corpus. Contains proprietary indexing artifacts. Not distributed."
+    }
+  },
+  "independently_accessible": {
+    "longmemeval_benchmark": {
+      "url": "https://github.com/xiaowu0162/LongMemEval",
+      "sha256_reference_dataset": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+      "description": "LongMemEval benchmark dataset (MIT license). Reference dataset sha256 identifies the specific version used."
+    }
+  },
+  "reproducibility_note": "Full independent reproduction requires the LongMemEval-S dataset (publicly available), a Gemini API key, and an xLMP-compatible VMN deployment. The xLMP retrieval layer is proprietary and not distributed in this package. Per-question retrieval results are available for controlled evaluation requests directed to ai@exergynet.org.",
+  "contact": "ai@exergynet.org"
+}

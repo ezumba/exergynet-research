@@ -1,0 +1,22 @@
+system,question_type,n,accuracy,mean_prompt_tokens,token_source
+BM25 RAG (B3),overall,500,0.564,29382,provider-reported
+BM25 RAG (B3),single-session-user,70,0.843,,
+BM25 RAG (B3),single-session-assistant,56,0.839,,
+BM25 RAG (B3),knowledge-update,78,0.680,,
+BM25 RAG (B3),multi-session,133,0.361,,
+BM25 RAG (B3),temporal-reasoning,133,0.534,,
+BM25 RAG (B3),single-session-preference,30,0.133,,
+Oracle (B1),overall,500,0.744,5600 (est.),local-tokenizer estimate
+Oracle (B1),single-session-user,70,0.943,,
+Oracle (B1),single-session-assistant,56,1.000,,
+Oracle (B1),knowledge-update,78,0.859,,
+Oracle (B1),multi-session,133,0.609,,
+Oracle (B1),temporal-reasoning,133,0.662,,
+Oracle (B1),single-session-preference,30,0.467,,
+ExergyNet xLMP (VERIFY-006),overall,500,0.762,2456,provider-reported
+ExergyNet xLMP (VERIFY-006),single-session-user,70,0.943,,
+ExergyNet xLMP (VERIFY-006),single-session-assistant,56,0.804,,
+ExergyNet xLMP (VERIFY-006),knowledge-update,78,0.910,,
+ExergyNet xLMP (VERIFY-006),multi-session,133,0.564,,
+ExergyNet xLMP (VERIFY-006),temporal-reasoning,133,0.782,,
+ExergyNet xLMP (VERIFY-006),single-session-preference,30,0.667,,

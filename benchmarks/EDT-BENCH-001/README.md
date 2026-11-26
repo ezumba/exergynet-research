@@ -5,6 +5,9 @@
 **Published by:** EDT INC  
 **Date:** 2026-11-25  
 **Benchmark:** LongMemEval-S (500 questions)  
+**Hugging Face Dataset:** [exergynet/ExergyNet-LongMemEval-S-EDT-BENCH-001](https://huggingface.co/datasets/exergynet/ExergyNet-LongMemEval-S-EDT-BENCH-001)  
+**Webpage:** [exergynet.org/research-edt-bench-001.html](https://exergynet.org/research-edt-bench-001.html)  
+**Zenodo DOI:** [10.5281/zenodo.24544305](https://doi.org/10.5281/zenodo.24544305)  
 **Contact:** [ai@exergynet.org](mailto:ai@exergynet.org)
 
 ---

@@ -1,15 +1,15 @@
 # EDT-BENCH-001 Public Artifact Integrity
-# Generated: 2026-11-25 (updated after governance corrections)
+# Generated: 2026-11-26 (updated with Hugging Face publication links)
 # Format: SHA-256  filename
 # Covers: all distributed public research artifacts in this directory tree
 # Note: SHA256SUMS.txt is itself excluded from this manifest
 # Restricted evidence hashes are in SEALED_EVIDENCE_HASHES.json
 
 # -- Root repository files --
-10a47b36f0998a1c7bfe2e28d27d6cc9b70163c4d58cf334f5a808df1da870c6  ../../README.md
+ba23a5ceb923f640d6ab14666e43b2f5be9c45c17d40ab926090eec60f8de860  ../../README.md
 717377d06eb27cdfdcb2603151ec718ddc886d33f79d0cde61bcce6c64a71773  ../../CITATION.cff
 de6cd358a30952f6993243795bddd7a743f17a4bf64a487e95614a026692af28  ../../LICENSE-STATUS.md
-8920b6d325c663dd75c02fad9b10cc1eefad0904639d41e9ea2378d6e8a1f792  ../../publication-index.json
+d3dc9383a3ac461839da8aecd08c417113b27d827169d1edff831cee4c65a5cf  ../../publication-index.json
 
 # -- Benchmark: EDT-BENCH-001 --
 12cb3770a8fd93abe81c025609b73804798c2227ec7d87fbf87ce8c0d278df83  EDT_BENCH_001_FINAL_REPORT.md
@@ -19,6 +19,7 @@ fa65181ef5f725aea055f718fb6214c15ab2b0265d6ff5b786ba5c1e6b695fb8  BENCHMARK_RESU
 2d11487c0192d0669c0db60999a936b13912cd055065b30a30b4ce43432c898b  PUBLIC_REPRODUCIBILITY_MANIFEST.json
 e94e9b0a07e760f781808fd270d0e8110bb322b3f2f934ee8ff443d5bc468716  SEALED_EVIDENCE_HASHES.json
 dd4d0e2bedc8707e03edfa3dd6d8c15c08f785a4d739b3a758259bfed77f8269  CITATION.cff
+c57b5afe717dd315995a320f1045f0e2e78244d7417117687531e447d1a6fa14  README.md
 
 # -- Figures --
 6b7bf99fdd5bd23117cbfa7405c4746c3ca930ec3289c48d96afbece838339cc  figures/overall_accuracy.svg

@@ -3,7 +3,7 @@
   "organization": "EDT INC",
   "repository": "exergynet-research",
   "url": "https://github.com/ezumba/exergynet-research",
-  "last_updated": "2026-11-25",
+  "last_updated": "2026-11-26",
   "publications": [
     {
       "id": "EDT-BENCH-001",
@@ -16,6 +16,7 @@
       "doi_pending": false,
       "doi_registrar": "Zenodo",
       "zenodo_url": "https://zenodo.org/records/24544305",
+      "huggingface_url": "https://huggingface.co/datasets/exergynet/ExergyNet-LongMemEval-S-EDT-BENCH-001",
       "path": "benchmarks/EDT-BENCH-001/",
       "report_file": "benchmarks/EDT-BENCH-001/EDT_BENCH_001_FINAL_REPORT.md",
       "report_sha256": "d6f1c18f4e3c7d604af1a0636794e853f976d506d49139bcb86ff9c7b62d6477",

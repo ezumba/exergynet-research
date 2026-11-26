@@ -45,10 +45,10 @@ The observed 1.8 percentage-point difference between xLMP (76.2%) and the Oracle
 
 ## Publications
 
-| ID | Title | Type | Date | DOI |
-|---|---|---|---|---|
-| EDT-BENCH-001 | ExergyNet Achieves 76.2% Accuracy on LongMemEval-S | Benchmark Report | 2026-11-25 | [10.5281/zenodo.24544305](https://doi.org/10.5281/zenodo.24544305) |
-| ExergyNet V5 | Memory Grows. Context Does Not Have To. | Research Paper | 2026-11-06 | [10.5281/zenodo.24021817](https://doi.org/10.5281/zenodo.24021817) |
+| ID | Title | Type | Date | DOI | Links |
+|---|---|---|---|---|---|
+| EDT-BENCH-001 | ExergyNet Achieves 76.2% Accuracy on LongMemEval-S | Benchmark Report | 2026-11-25 | [10.5281/zenodo.24544305](https://doi.org/10.5281/zenodo.24544305) | [Report](benchmarks/EDT-BENCH-001/README.md) · [ExergyNet](https://exergynet.org/research-edt-bench-001.html) · [Hugging Face](https://huggingface.co/datasets/exergynet/ExergyNet-LongMemEval-S-EDT-BENCH-001) |
+| ExergyNet V5 | Memory Grows. Context Does Not Have To. | Research Paper | 2026-11-06 | [10.5281/zenodo.24021817](https://doi.org/10.5281/zenodo.24021817) | [GitHub](https://github.com/ezumba/exergynet-whitepaper) · [ExergyNet](https://exergynet.org/whitepaper.html) |
 
 ---
 

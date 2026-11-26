@@ -1,15 +1,16 @@
 cff-version: 1.2.0
-message: "If you use or reference ExergyNet research, please cite using the metadata below."
+message: "To cite the benchmark report contained in this repository, use the preferred-citation below. To cite the repository itself, use the repository-level metadata."
 title: "ExergyNet Research"
-type: software
+type: dataset
 date-released: "2026-11-25"
 url: "https://exergynet.org/research.html"
 repository-code: "https://github.com/ezumba/exergynet-research"
 abstract: >-
-  Official ExergyNet research publications and validated benchmark results.
+  Official ExergyNet research publications, computational efficiency evaluations,
+  benchmark results and approved reproducibility materials. Published by EDT INC.
   Includes EDT-BENCH-001: a LongMemEval-S evaluation of ExergyNet's xLMP
   Semantic Router demonstrating 76.2% accuracy with 91.6% lower context
-  consumption versus session-level BM25.
+  consumption versus session-level BM25 (doi: 10.5281/zenodo.24544305).
 authors:
   - name: "EDT INC"
     website: "https://exergynet.org"
@@ -20,5 +21,20 @@ keywords:
   - context efficiency
   - LongMemEval
   - benchmark
-doi: 10.5281/zenodo.24544305
 license-url: "https://github.com/ezumba/exergynet-research/blob/main/LICENSE-STATUS.md"
+preferred-citation:
+  type: report
+  title: "ExergyNet Achieves 76.2% Accuracy on LongMemEval-S with 91.6% Lower Context Consumption"
+  authors:
+    - name: "EDT INC"
+      website: "https://exergynet.org"
+      email: "ai@exergynet.org"
+  year: 2026
+  version: "1.0.0"
+  doi: 10.5281/zenodo.24544305
+  url: "https://exergynet.org/research-edt-bench-001.html"
+  repository-code: "https://github.com/ezumba/exergynet-research/tree/main/benchmarks/EDT-BENCH-001"
+  identifiers:
+    - type: doi
+      value: "10.5281/zenodo.24544305"
+      description: "Zenodo DOI for EDT-BENCH-001 benchmark report"

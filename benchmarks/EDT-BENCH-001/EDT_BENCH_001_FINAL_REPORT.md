@@ -2,8 +2,8 @@
 
 **Benchmark:** LongMemEval-S (500 questions, conversational memory evaluation)  
 **Date:** 2026-11-25  
-**Classification:** PUBLIC RELEASE — PENDING TRUSTEE AUTHORIZATION  
-**Directive:** EDT-BENCH-001-C3-VERIFY-006 (Sealed, EDT Trustee)  
+**Classification:** PUBLIC RELEASE — AUTHORIZED 2026-11-25  
+**Report version:** R5  
 **Contact:** EDT INC / ai@exergynet.org  
 
 ---

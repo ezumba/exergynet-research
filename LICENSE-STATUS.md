@@ -33,13 +33,15 @@ This repository does not redistribute the LongMemEval dataset. All benchmark eva
 
 ## Proprietary Components
 
-The **xLMP Semantic Router** and **VMN (Vanguard Memory Node)** retrieval infrastructure described in EDT-BENCH-001 are proprietary ExergyNet technology owned by EDT INC. These systems are not distributed in this repository. This publication documents their measured performance characteristics under defined evaluation conditions.
+The xLMP Semantic Router and associated ExergyNet infrastructure are proprietary technologies. All intellectual property rights are reserved by their respective rights holders. EDT INC serves as the designated public research and commercial engagement channel for ExergyNet.
+
+These systems are not distributed in this repository. Publication of research findings does not constitute an assignment, transfer, or license of the underlying proprietary intellectual property. This publication documents their measured performance characteristics under defined evaluation conditions.
 
 ---
 
 ## Contact
 
-For licensing questions, controlled evaluation access to restricted artifacts, or research collaboration:
+For licensing questions, controlled evaluation access requests (subject to EDT INC approval and applicable confidentiality arrangements), or research collaboration:
 
 **EDT INC**  
 ai@exergynet.org  

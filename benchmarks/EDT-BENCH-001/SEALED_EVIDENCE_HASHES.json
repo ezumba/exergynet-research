@@ -1,0 +1,36 @@
+{
+  "schema": "SEALED_EVIDENCE_HASHES_1.0",
+  "benchmark_id": "EDT-BENCH-001",
+  "sealed_date": "2026-11-25",
+  "note": "Restricted experimental evidence. These artifacts are sealed and not publicly distributed. Hashes are published for independent integrity verification only. Access requires EDT INC approval and applicable confidentiality arrangements.",
+  "restricted_artifacts": [
+    {
+      "identifier": "c3_meta_verify006_gen.jsonl",
+      "description": "Per-question generation results (500 records). Sealed experimental record. Contains provider API outputs.",
+      "sha256": "cb154d2949b6c6bf94406c11a8f80ec373e3bececa2e066e61fb074b9d0bfa1e",
+      "records": 500,
+      "access": "RESTRICTED"
+    },
+    {
+      "identifier": "c3_meta_verify006_eval.jsonl",
+      "description": "Per-question evaluation labels (500 records). Sealed experimental record.",
+      "sha256": "4ddaf962cdb5b6152bed91da4b4b14f0cb2cea000055b93e57f103a75b3d3719",
+      "records": 500,
+      "access": "RESTRICTED"
+    },
+    {
+      "identifier": "c3_meta_v3_vmn_top10_full.jsonl",
+      "description": "VMN retrieval corpus. Contains proprietary indexing artifacts.",
+      "sha256": "7cdcf2860d4fa58d3b35aae602598f1a397702cd3aeaf0d30957b10566ebc532",
+      "access": "RESTRICTED"
+    },
+    {
+      "identifier": "longmemeval_s_cleaned.json",
+      "description": "Reference dataset (LongMemEval-S, specific version used in evaluation). Publicly available from original authors at https://github.com/xiaowu0162/LongMemEval under MIT license.",
+      "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+      "access": "THIRD_PARTY_PUBLIC",
+      "source": "https://github.com/xiaowu0162/LongMemEval"
+    }
+  ],
+  "access_policy": "Requests for restricted evaluation evidence are subject to EDT INC approval and applicable confidentiality arrangements. Publication of these identifiers and hashes does not constitute an unconditional commitment to distribute the restricted artifacts. Contact: ai@exergynet.org"
+}

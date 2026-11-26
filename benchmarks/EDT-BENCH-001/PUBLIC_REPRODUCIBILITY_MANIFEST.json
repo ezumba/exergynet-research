@@ -51,6 +51,7 @@
       "description": "LongMemEval benchmark dataset (MIT license). Reference dataset sha256 identifies the specific version used."
     }
   },
-  "reproducibility_note": "Full independent reproduction requires the LongMemEval-S dataset (publicly available), a Gemini API key, and an xLMP-compatible VMN deployment. The xLMP retrieval layer is proprietary and not distributed in this package. Per-question retrieval results are available for controlled evaluation requests directed to ai@exergynet.org.",
+  "reproducibility_note": "Full independent reproduction requires the LongMemEval-S dataset (publicly available), a Gemini API key, and an xLMP-compatible VMN deployment. The xLMP retrieval layer is proprietary and not distributed in this package.",
+  "controlled_access_policy": "Requests for restricted evaluation evidence are subject to EDT INC review and approval, and to applicable confidentiality arrangements and intellectual property protections. Publication of artifact identifiers and hashes does not constitute an unconditional commitment to distribute restricted artifacts. Intellectual property rights in all proprietary ExergyNet technology are reserved by their respective rights holders.",
   "contact": "ai@exergynet.org"
 }

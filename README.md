@@ -1,6 +1,6 @@
 # ExergyNet Research
 
-Official ExergyNet research publications, validated benchmark results, computational efficiency evaluations, and approved reproducibility materials. Published by EDT INC.
+Official ExergyNet research publications, computational efficiency evaluations, benchmark results and approved reproducibility materials. Published by EDT INC.
 
 ---
 

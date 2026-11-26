@@ -10,7 +10,8 @@
       "type": "benchmark_report",
       "title": "ExergyNet Achieves 76.2% Accuracy on LongMemEval-S with 91.6% Lower Context Consumption",
       "date": "2026-11-25",
-      "status": "PENDING_PUBLICATION_AUTHORIZATION",
+      "status": "PUBLISHED",
+      "authorization_date": "2026-11-25",
       "doi": "10.5281/zenodo.24544305",
       "doi_pending": false,
       "doi_registrar": "Zenodo",
@@ -37,12 +38,15 @@
       }
     }
   ],
-  "pending": [
+  "cross_references": [
     {
       "id": "ExergyNet-V5",
       "type": "research_paper",
       "title": "Memory Grows. Context Does Not Have To.",
-      "note": "Published separately at https://github.com/ezumba/exergynet-whitepaper; will be cross-referenced here when exergynet-research is live."
+      "status": "PUBLISHED",
+      "doi": "10.5281/zenodo.24021817",
+      "repository": "https://github.com/ezumba/exergynet-whitepaper",
+      "note": "Published separately in exergynet-whitepaper repository."
     }
   ]
 }
